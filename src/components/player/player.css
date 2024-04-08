@@ -1,0 +1,208 @@
+.container_player {
+    height: 15vh !important;
+}
+
+.con {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 1rem;
+    background-color: var(--black-color);
+    border-color: var(--black-color) !important;
+    border-radius: 10px;
+    color: var(--white-color);
+
+}
+
+.container_player_content_controls {
+    flex: 1;
+}
+
+.container_player_content_progress {
+    flex: 4;
+}
+
+.container_player_content_progress_current {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    font-size: .7rem;
+}
+
+.container_player_content_progress_current input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: transparent;
+    color: #111;
+    font-size: .8rem;
+    margin: 0 .5rem;
+    border-radius: 5px;
+}
+
+.container_player_content_controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.container_player_content_controls button {
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    color: var(--white-color);
+    cursor: pointer;
+    /* margin: .5rem; */
+}
+
+.container_player_content_controls button:hover {
+    color: var(--main-color);
+}
+
+.container_player_content_controls .btn_player_play {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--black-color);
+    border-radius: 50%;
+    background-color: var(--main-color);
+    width: 50px;
+    height: 50px;
+    font-size: 1.5rem;
+}
+
+.container_player_content_controls .btn_player_play .fa-play {
+    padding-left: .1rem;
+}
+
+.container_player_content_controls .btn_player_play:hover {
+    color: var(--white-color);
+}
+
+
+
+/* Range input style */
+
+.container_player_content_progress_current .progress_bar {
+    -webkit-appearance: none;
+    appearance: none;
+    margin-right: 15px;
+    width: 100%;
+    height: 5px;
+    background: var(--white-color);
+    border-radius: 5px;
+    background-image:
+        linear-gradient(var(--main-color), var(--main-color));
+    background-repeat: no-repeat;
+    background-size: 0% 100%
+}
+
+.container_player_content_progress_current #radio {
+    background-size: 100% 100% !important;
+}
+
+
+.container_player_content_progress_current .progress_bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: var(--main-color);
+    cursor: pointer;
+    box-shadow: 0 0 2px 0 #555;
+    transition: all .2s ease;
+}
+.container_player_content_progress_current .progress_bar::-webkit-slider-thumb:hover {
+  
+    height: 15px;
+    width: 15px;
+}
+
+.container_player_content_progress_current .progress_bar::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background: transparent;
+}
+
+
+/* Volumen Range */
+.container_player_content_volume {
+    position: relative;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px
+}
+
+.container_player_content_volume button {
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    color: var(--white-color);
+    cursor: pointer;
+}
+
+.container_player_content_volume .volume_range {
+    position: absolute;
+    top: -100px;
+    left: -50px;
+    transform: rotate(-90deg);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 0 #555;
+    display: none;
+    background-color: var(--black-color);
+    justify-content: center;
+    align-items: center;
+}
+
+.container_player_content_volume:hover .volume_range {
+    /* display: block; */
+    display: flex;
+
+}
+
+.container_player_content_volume .volume_range_progress_bar {
+    -webkit-appearance: none;
+    appearance: none;
+    background: var(--white-color);
+    border-radius: 10px;
+    height: 10px;
+    background-image:
+        linear-gradient(var(--main-color), var(--main-color));
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 5px;
+
+}
+
+
+.container_player_content_volume .volume_range_progress_bar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.container_player_content_volume .volume_range_progress_bar::-webkit-slider-runnable-track {
+    -webkit-appearance: none;
+    box-shadow: none;
+    border: none;
+    background-color: transparent;
+}
